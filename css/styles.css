@@ -38,6 +38,7 @@ ul{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+
 }
 
 .button{
@@ -64,6 +65,11 @@ ul{
     list-style-type: none;
     margin-top: 0;
     margin-bottom: 0;
+}
+.section{
+    padding-bottom: 94px;
+    padding-top: 94px;
+    align-items: center;
 }
 
 
@@ -157,21 +163,24 @@ header{
 
 /* footer */
 
-footer .list{
-    margin-top: 20px;
-}
+
 footer{
     background-color: var(--bg-color);
-}
-.footer{
     padding: 60px 0;
 }
-footer ul a{
+.logo-footer{
+    margin-bottom: 20px;
+}
+.adress{
     color: var(--primary-white-color);
     text-decoration: none;
-
 }
-
+.adress-list{
+    margin-bottom: 9px;
+}
+.adress-list:last-child{
+    margin-bottom: 0;
+}
 footer address{
     line-height: 1.71;
     font-style: normal;
@@ -192,22 +201,21 @@ footer address a:focus{
 
 
 
-/* body */
+/* body index*/
 
 
 /* order */
 
-.hero{
+.order{
     color: var(--primary-white-color);
     background-color: var(--bg-color);
     text-align: center;
     padding-bottom: 200px;
-}
-.order{
+    padding-top: 200px;
     text-align: center;
 }
 .order-text{
-    font-family: 'Roboto';
+    font-family: Roboto;
     font-weight: 900;
     letter-spacing: 0.06em;
     font-style: normal;
@@ -215,31 +223,21 @@ footer address a:focus{
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
 }
 .button.primary{
+    font-family: Roboto;
+    font-weight: 700;
     color: var(--primary-white-color);
     background: var(--accent-color);
     letter-spacing: 0.06em;
-    font-style: bold;
     font-size: 16px;
-    font-family: inherit;
     line-height: 1.87;
     border-radius: 4px;
     min-width: 216px;
     padding: 10px 32px 10px 32px;
     text-align: center;
 }
-.section{
-    padding-bottom: 94px;
-    padding-top: 94px;
-    width: 1200px;
-}
-.examples.section{
-    padding-top: 0;
-}
-
 
 
 /* features */
@@ -247,8 +245,11 @@ footer address a:focus{
 .features-list{
     display: flex;
 }
+.features .features-list .item:last-child{
+    margin-right: 0;
+}
 .features .item{
-    margin: 0 30px 0 0;
+    margin-right: 30px;
     max-width: 270px;
 }
 .features .main-text{
@@ -270,23 +271,26 @@ footer address a:focus{
 
 /* examples */
 
+.examples.section{
+    padding-top: 0;
+}
 .examples .main-tex{
     color: var(--h-text-color);
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .list-jpg{
     display: flex;
-    margin-right: 30px;
+}
+.list-jpg:last-child{
+    margin-right: 0;
 }
 .list-jpg .item{
     margin-right: 30px;
 }
-.list-jpg .item:last-child{
-    margin-right: 0;
-}
+
 
 /* team */
 
@@ -297,14 +301,14 @@ footer address a:focus{
     max-width: 270px;
     display: flex;
 }
+.team .list:last-child{
+    margin-right: 0;
+}
 .team .list .item{
     margin-right: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-white-color);
-}
-.team .list .item:last-child{
-    margin-right: 0;
 }
 .team .main{
     color: var(--h-text-color);
@@ -345,7 +349,7 @@ footer address a:focus{
 .list-filter{
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 0 50px 0;
 }
 .button.filter{
     color: var(--h-text-color);
@@ -364,16 +368,14 @@ footer address a:focus{
 }
 .button.filter:hover,
 .button.filter:focus{
-    padding: 6px 25px;
+    /* padding: 6px 25px; */
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
 
 /* main text portfolio */
 
-.portfolio{
-    padding-top: 50px;
-}
+
 .portfolio .text{
     padding-left: 24px;
 }
@@ -381,10 +383,14 @@ footer address a:focus{
     display: flex;
     flex-wrap: wrap;
 }
+.portfolio .img{
+    display: block;
+}
 .portfolio .border{
     border: 1px;
     border-style: solid;
     border-color: var(--border-color);
+    border-top: none;
 }
 .portfolio .item{
     width: 370px;
